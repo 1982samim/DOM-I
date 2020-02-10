@@ -40,3 +40,14 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Create selectors by using any of the DOM element's methods
+let ctaImg = document.querySelector('#cta-img');
+let midImg = document.querySelector('#middle-img');
+
+// Note that IDs have been used on all images.  Use the IDs to update src path content
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
+
